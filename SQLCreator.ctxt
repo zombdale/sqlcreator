@@ -1,0 +1,47 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SQLCreator()
+comment1.params=
+comment1.target=void\ mini_my()
+comment1.text=\r\n\ \ \ \ main\ program\r\n
+comment10.params=all\ TableName\ WhichColumns\ OrderByWhichColumns\ AscDescTable
+comment10.target=java.lang.String\ QuerySelectUniqueOrdered(boolean,\ java.lang.String,\ java.lang.String[],\ java.lang.String[],\ int[])
+comment10.text=\r\n\ "SELECT\ DISTINCT\ [all\='*'/WhichColumns[]]\ FROM\ TableName\ ORDER\ BY\ OrderByWhichColumns[]\ +\ AscDescTable[]\ \r\n
+comment11.params=all\ WhichColumns\ TablesName\ ColumnsName\ Between\ AndOr\ X\ Y
+comment11.target=java.lang.String\ QuerySelectBetween(boolean,\ java.lang.String[],\ java.lang.String[],\ java.lang.String[],\ boolean,\ boolean,\ int,\ int)
+comment11.text=\r\n\ SELECT\ [all\='*'/WhichColumns[]]\ FROM\ TablesName[]\ WHERE\ (((ColumnsName[]\ [*not\ +-\ BETWEEN]\ X\ AND\ Y)))*\ AND|OR\r\n\ need\ prepare\ inty\ /lub\ nie\ \ \ .,\ for\ mass\ \r\n\ \r\n
+comment12.params=all\ WhichColumns\ TablesName\ ColumnsName\ AndOr\ LikeNotLike\ PatternString
+comment12.target=java.lang.String\ QuerySelectLike(boolean,\ java.lang.String[],\ java.lang.String[],\ java.lang.String[],\ boolean,\ boolean,\ java.lang.String)
+comment12.text=\r\n\ SELECT\ [all\='*'/WhichColumns[]]\ FROM\ TablesName[]\ WHERE\ (((ColumnsName[]\ LIKE\ ''pattern''\ \r\n\ need\ prepare~\!\ \ for\ mass\ \r\n
+comment13.params=all\ WhichColumns\ TablesName\ ColumnsName\ Values\ AndOr
+comment13.target=java.lang.String\ QuerySelectWhereEqual(boolean,\ java.lang.String[],\ java.lang.String[],\ java.lang.String[],\ java.lang.String[],\ boolean)
+comment13.text=\r\n\ EQUAL\ >>\ SELECT\ [all\='*'/WhichColumns[]]\ FROM\ TablesName[]\ WHERE\ (((ColumnsName[]\ \=\=\ Values[]))\ ^\ and/or\r\n\ for\ mass\ \r\n
+comment14.params=TableName\ ColumnsName
+comment14.target=java.lang.String\ QueryInsert(java.lang.String,\ java.lang.String[])
+comment14.text=\r\n\ INSERT\ INTO\ TableName\ (ColumnsName[])\ VALUES\ (Values[])\ \r\n\ need\ prepare``~\!\r\n
+comment15.params=TablesName\ TableName\ ColumnsName\ ValuesSet\ TablesNameId\ ValuesGet\ AndOr
+comment15.target=java.lang.String\ QueryUpdate(java.lang.String[],\ java.lang.String,\ java.lang.String[],\ java.lang.String[],\ java.lang.String[],\ java.lang.String[],\ boolean)
+comment15.text=\r\n\ UPDATE\ TableName\ SET\ ColumnsName[]\ \=\ ValuesSet[]\ ,\ column2\ \=\ value2,\ ...\ \ \ \ \ \ \ \ \ \ \ \ \ \ WHERE\ condition\ {TablesNameId\ \=\ ValuesGet[]}\ AND/OR\ condition*\ ;\r\n\ \ \ \ \ \ \ \ \ \ public\ boolean\ Update[TableName]+For+ColumnsName[]+Where+TablesNameId[](String[]\ TableName,\ String[][]\ ColumnsNameAndValues,\ String\ \r\n\ \ \ \ \ \ \ \ \ \ /\ Update[TableName]+For+ColumnsName[]+\r\n
+comment16.params=tablname\ ColumnsName\ keysi\ all\ Itertori_\ cotable
+comment16.target=java.lang.String\ QueryDelete(java.lang.String,\ java.lang.String[],\ boolean,\ boolean,\ int,\ java.lang.String[])
+comment2.params=
+comment2.target=int\ pobierzINT()
+comment3.params=
+comment3.target=java.lang.String\ pobierzSTR()
+comment4.params=
+comment4.target=char\ pobierzCHR()
+comment5.params=Queed
+comment5.target=java.lang.String[]\ ArrayTransfer(java.util.ArrayList)
+comment6.params=all\ TableName\ WhichColumns
+comment6.target=java.lang.String\ QuerySelectUnique(boolean,\ java.lang.String,\ java.lang.String[])
+comment6.text=\r\n\ "SELECT\ DISTINCT\ [all\='*'/WhichColumns[]]\ FROM\ TableName\r\n
+comment7.params=all\ TableName\ WhichColumns\ _Iterator
+comment7.target=java.lang.String\ QuerySelect(boolean,\ java.lang.String,\ java.lang.String[],\ int)
+comment7.text=\r\n\ "SELECT\ [all\='*'/WhichColumns[]]\ FROM\ TableName\r\n\ checked.\r\n
+comment8.params=all\ TableName\ WhichColumns\ _Iterator
+comment8.target=java.lang.String\ QuerySelectCount(boolean,\ java.lang.String,\ java.lang.String[],\ int)
+comment8.text=\r\n\ "SELECT\ COUNT\ [all\='*'/WhichColumns[]]\ FROM\ TableName\r\n\ checked.\r\n
+comment9.params=all\ TableName\ WhichColumns\ OrderByWhichColumns\ AscDescTable
+comment9.target=java.lang.String\ QuerySelectOrdered(boolean,\ java.lang.String,\ java.lang.String[],\ java.lang.String[],\ int[])
+comment9.text=\r\n\ "SELECT\ [all\='*'/WhichColumns[]]\ FROM\ TableName\ ORDER\ BY\ \r\n
+numComments=17
